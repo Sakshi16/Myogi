@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="countries_array">
+
+        <item>Argentina</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belgium</item>
+        <item>Bhutan</item>
+        <item>Brazil</item>
+        <item>Canada</item>
+        <item>China</item>
+        <item>Costa Rica</item>
+        <item>Croatia</item>
+        <item>Czech Republic</item>
+        <item>Denmark</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>French Guiana</item>
+        <item>French Polynesia</item>
+        <item>French Southern Territories</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Greece</item>
+        <item>Hong Kong</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Kenya</item>
+        <item>Luxembourg</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mauritius</item>
+        <item>Mexico</item>
+        <item>Monaco</item>
+        <item>Myanmar</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>Netherlands Antilles</item>
+        <item>New Zealand</item>
+        <item>Norway</item>
+        <item>Panama</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>South Africa</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Thailand</item>
+        <item>Bahamas</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>United States Minor Outlying Islands</item>
+        <item>Vietnam</item>
+        <item>Yugoslavia</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+</resources>

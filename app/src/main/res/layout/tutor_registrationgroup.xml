@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app=""
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture"
+    tools:context=".MainActivity" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/orange"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="0dp">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutor Registration"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="50"
+            android:textSize="28dp"
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/dyk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:text="Do you take group tutions?"
+        android:textSize="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:text="Yes"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:id="@+id/yes"
+        android:button="@android:drawable/radiobutton_off_background"
+        android:layout_below="@+id/dyk"
+        android:layout_alignLeft="@+id/dyk"
+        android:layout_alignStart="@+id/dyk" />
+
+    <RadioButton
+        android:text="No"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yes"
+        android:layout_alignRight="@+id/dyk"
+        android:layout_alignEnd="@+id/dyk"
+        android:layout_marginRight="54dp"
+        android:layout_marginEnd="54dp"
+        android:id="@+id/no"
+        android:button="@android:drawable/radiobutton_off_background" />
+
+    <TextView
+        android:text="Min  - "
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/Cost"
+        android:layout_alignLeft="@+id/Cost"
+        android:layout_alignStart="@+id/Cost" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText8"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toRightOf="@+id/yes"
+        android:layout_toEndOf="@+id/yes" />
+
+    <TextView
+        android:text="Max  - "
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText8"
+        android:layout_alignRight="@+id/dyk"
+        android:layout_alignEnd="@+id/dyk"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:id="@+id/textView7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText11"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignRight="@+id/Cost"
+        android:layout_alignEnd="@+id/Cost"
+        android:layout_marginRight="6dp"
+        android:layout_marginEnd="6dp" />
+
+    <EditText
+        android:layout_height="30dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText15"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_width="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8" />
+
+
+    <CheckBox
+        android:text="Friday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox5"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_below="@+id/checkBox4"
+        android:layout_alignLeft="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox4" />
+
+    <CheckBox
+        android:text="Saturday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox6"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_below="@+id/checkBox5"
+        android:layout_alignLeft="@+id/checkBox5"
+        android:layout_alignStart="@+id/checkBox5" />
+
+    <CheckBox
+        android:text="Sunday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox7"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_below="@+id/checkBox6"
+        android:layout_alignLeft="@+id/checkBox6"
+        android:layout_alignStart="@+id/checkBox6" />
+
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/AddMore"
+        android:background="@android:drawable/ic_input_add"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/hours6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:text="Monday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_alignBaseline="@+id/Days"
+        android:layout_alignBottom="@+id/Days"
+        android:layout_alignLeft="@+id/no"
+        android:layout_alignStart="@+id/no" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:hint="24.00hrs"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:id="@+id/editText9"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_width="80dp"
+        android:layout_alignBaseline="@+id/hours"
+        android:layout_alignBottom="@+id/hours"
+        android:layout_alignLeft="@+id/hours6"
+        android:layout_alignStart="@+id/hours6" />
+
+    <TextView
+        android:text="Add More"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/to3"
+        android:layout_toLeftOf="@+id/AddMore"
+        android:layout_toStartOf="@+id/AddMore" />
+
+    <RadioButton
+        android:text="My residence"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/residence"
+        android:button="@android:drawable/radiobutton_off_background"
+        android:layout_below="@+id/teachwhere"
+        android:layout_alignLeft="@+id/teachwhere"
+        android:layout_alignStart="@+id/teachwhere" />
+
+    <RadioButton
+        android:text="Client's residence"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/c_residence"
+        android:button="@android:drawable/radiobutton_off_background"
+        android:layout_below="@+id/residence"
+        android:layout_alignLeft="@+id/residence"
+        android:layout_alignStart="@+id/residence" />
+
+    <RadioButton
+        android:text="Workplace"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton5"
+        android:button="@android:drawable/radiobutton_off_background"
+        android:layout_below="@+id/c_residence"
+        android:layout_alignLeft="@+id/c_residence"
+        android:layout_alignStart="@+id/c_residence" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="40dp"
+        android:id="@+id/to3"
+        android:layout_below="@+id/to1"
+        android:layout_alignLeft="@+id/to2"
+        android:layout_alignStart="@+id/to2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="No. of people in a group class :"
+        android:textSize="20dp"
+        android:id="@+id/Cost"
+        android:layout_below="@+id/yes"
+        android:layout_alignLeft="@+id/yes"
+        android:layout_alignStart="@+id/yes" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Days available :"
+        android:textSize="20dp"
+        android:id="@+id/Days"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView8"
+        android:layout_toLeftOf="@+id/checkBox"
+        android:layout_toStartOf="@+id/checkBox" />
+
+    <TextView
+        android:text="Min. charge per person :"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <CheckBox
+        android:text="Tuesday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_alignBottom="@+id/to2"
+        android:layout_alignRight="@+id/dyk"
+        android:layout_alignEnd="@+id/dyk" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="40dp"
+        android:id="@+id/to2"
+        android:layout_alignTop="@+id/editText9"
+        android:layout_alignLeft="@+id/to1"
+        android:layout_alignStart="@+id/to1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="40dp"
+        android:id="@+id/to1"
+        android:layout_below="@+id/to2"
+        android:layout_toRightOf="@+id/editText11"
+        android:layout_toEndOf="@+id/editText11" />
+
+    <CheckBox
+        android:text="Thursday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox4"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignRight="@+id/checkBox2"
+        android:layout_alignEnd="@+id/checkBox2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/hours5"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="0:00 hrs"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:inputType="time"
+        android:layout_above="@+id/checkBox4"
+        android:layout_alignRight="@+id/editText11"
+        android:layout_alignEnd="@+id/editText11" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/hours6"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="24:00 hrs"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:inputType="time"
+        android:layout_alignBaseline="@+id/hours5"
+        android:layout_alignBottom="@+id/hours5"
+        android:layout_alignRight="@+id/AddMore"
+        android:layout_alignEnd="@+id/AddMore" />
+
+    <CheckBox
+        android:text="Wednesday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox3"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_below="@+id/hours3"
+        android:layout_alignRight="@+id/hours"
+        android:layout_alignEnd="@+id/hours" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/hours4"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="24:00 hrs"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:inputType="time"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/to2"
+        android:layout_toRightOf="@+id/to1"
+        android:layout_toEndOf="@+id/to1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/hours3"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="0:00 hrs"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:inputType="time"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignLeft="@+id/hours5"
+        android:layout_alignStart="@+id/hours5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/hours"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="0:00 hrs"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:inputType="time"
+        android:layout_below="@+id/checkBox"
+        android:layout_toLeftOf="@+id/to2"
+        android:layout_toStartOf="@+id/to2" />
+
+    <TextView
+        android:text="Where will you teach?"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teachwhere"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/checkBox7"
+        android:layout_alignLeft="@+id/Days"
+        android:layout_alignStart="@+id/Days" />
+
+

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app=""
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture"
+    tools:context=".MainActivity" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/orange"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="0dp">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutor Registration"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="50"
+            android:textSize="28dp"
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="14dp"
+        android:text="Specialization :"
+        android:textSize="20dp"
+        android:id="@+id/Specialization"
+        android:layout_below="@+id/Qualification"
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText13"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_above="@+id/AddInfo"
+        android:layout_toRightOf="@+id/Yrs"
+        android:layout_toEndOf="@+id/Yrs" />
+
+    <EditText
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText10"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_below="@+id/Qualification"
+        android:layout_height="140dp"
+        android:layout_alignLeft="@+id/Qualification"
+        android:layout_alignStart="@+id/Qualification"
+        android:layout_width="390dp" />
+
+    <EditText
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText12"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_height="110dp"
+        android:layout_below="@+id/Specialization"
+        android:layout_alignLeft="@+id/Specialization"
+        android:layout_alignStart="@+id/Specialization"
+        android:layout_width="350dp"
+        android:layout_alignRight="@+id/editText10"
+        android:layout_alignEnd="@+id/editText10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Years of experience :"
+        android:textSize="20dp"
+        android:id="@+id/Yrs"
+        android:layout_below="@+id/editText12"
+        android:layout_alignLeft="@+id/AddInfo"
+        android:layout_alignStart="@+id/AddInfo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Additional information :"
+        android:textSize="20dp"
+        android:id="@+id/AddInfo"
+        android:layout_below="@+id/Yrs"
+        android:layout_alignLeft="@+id/Specialization"
+        android:layout_alignStart="@+id/Specialization" />
+
+    <EditText
+        android:layout_height="30dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_below="@+id/InstituteName"
+        android:layout_alignLeft="@+id/InstituteName"
+        android:layout_alignStart="@+id/InstituteName"
+        android:layout_width="390dp" />
+
+    <TextView
+        android:id="@+id/InstituteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Name of institution : "
+        android:textSize="20dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignLeft="@+id/Qualification"
+        android:layout_alignStart="@+id/Qualification" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="Qualification :"
+        android:textSize="20dp"
+        android:id="@+id/Qualification"
+        android:layout_below="@+id/editText4"
+        android:layout_alignLeft="@+id/Specialization"
+        android:layout_alignStart="@+id/Specialization" />
+
+    <EditText
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText14"
+        android:layout_width="match_parent"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_height="100dp"
+        android:layout_below="@+id/AddInfo"
+        android:layout_alignLeft="@+id/AddInfo"
+        android:layout_alignStart="@+id/AddInfo"
+        android:layout_alignRight="@+id/editText12"
+        android:layout_alignEnd="@+id/editText12" />
+

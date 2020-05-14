@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app=""
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture"
+    tools:context=".MainActivity" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:background="@color/orange"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="0dp">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client Registration"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="50"
+            android:textSize="28dp"
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/lookingFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="125dp"
+        android:text="Are you looking for"
+        android:textSize="20dp"/>
+
+    <RadioButton
+        android:text="Yoga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:id="@+id/plainYoga"
+        android:button="@android:drawable/radiobutton_off_background"
+        android:textSize="20dp"
+        android:layout_below="@+id/lookingFor"
+        android:layout_alignLeft="@+id/lookingFor"
+        android:layout_alignStart="@+id/lookingFor" />
+
+    <RadioButton
+        android:text="Both"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton4"
+        android:button="@android:drawable/radiobutton_off_background"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_alignBaseline="@+id/Meditation"
+        android:layout_alignBottom="@+id/Meditation"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Cost :"
+        android:textSize="20dp"
+        android:id="@+id/Cost"
+        android:layout_below="@+id/plainYoga"
+        android:layout_alignLeft="@+id/plainYoga"
+        android:layout_alignStart="@+id/plainYoga" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Days available :"
+        android:textSize="20dp"
+        android:id="@+id/Days"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/perHour"
+        android:layout_alignLeft="@+id/Cost"
+        android:layout_alignStart="@+id/Cost" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(per hour)"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:id="@+id/perHour"
+        android:layout_below="@+id/Cost"
+        android:layout_alignLeft="@+id/Cost"
+        android:layout_alignStart="@+id/Cost" />
+
+    <CheckBox
+        android:text="Monday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:id="@+id/checkBox"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_alignBaseline="@+id/Days"
+        android:layout_alignBottom="@+id/Days"
+        android:layout_alignLeft="@+id/Meditation"
+        android:layout_alignStart="@+id/Meditation" />
+
+    <CheckBox
+        android:text="Tuesday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox" />
+
+    <CheckBox
+        android:text="Wednesday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox3"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkBox2"
+        android:layout_alignStart="@+id/checkBox2" />
+
+    <CheckBox
+        android:text="Thursday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox4"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignLeft="@+id/checkBox3"
+        android:layout_alignStart="@+id/checkBox3" />
+
+    <CheckBox
+        android:text="Friday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox5"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_below="@+id/checkBox4"
+        android:layout_alignLeft="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox4" />
+
+    <CheckBox
+        android:text="Saturday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox6"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_below="@+id/checkBox5"
+        android:layout_alignLeft="@+id/checkBox5"
+        android:layout_alignStart="@+id/checkBox5" />
+
+    <CheckBox
+        android:text="Sunday"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox7"
+        android:button="@android:drawable/checkbox_off_background"
+        android:layout_below="@+id/checkBox6"
+        android:layout_alignLeft="@+id/checkBox6"
+        android:layout_alignStart="@+id/checkBox6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Time availability :"
+        android:textSize="20dp"
+        android:id="@+id/Time"
+        android:layout_below="@+id/checkBox7"
+        android:layout_alignLeft="@+id/plainYoga"
+        android:layout_alignStart="@+id/plainYoga" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        style="@android:style/Widget.DeviceDefault.SeekBar"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:max="@integer/Max"
+        android:layout_above="@+id/perHour"
+        android:layout_toRightOf="@+id/Cost"
+        android:layout_toEndOf="@+id/Cost" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_alignBottom="@+id/Time"
+        android:layout_toRightOf="@+id/lookingFor"
+        android:id="@+id/hours"
+        android:layout_alignTop="@+id/Time"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="0:00 hrs"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:inputType="time"
+        android:layout_alignRight="@+id/checkBox4"
+        android:layout_alignEnd="@+id/checkBox4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:hint="24.00hrs"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:layout_alignBottom="@+id/hours"
+        android:layout_toRightOf="@+id/checkBox3"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:id="@+id/editText9"
+        android:layout_alignTop="@+id/hours"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_alignRight="@+id/radioButton4"
+        android:layout_alignEnd="@+id/radioButton4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="40dp"
+        android:id="@+id/to1"
+        android:layout_below="@+id/checkBox7"
+        android:layout_toRightOf="@+id/Meditation"
+        android:layout_toEndOf="@+id/Meditation" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/hours3"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="0:00 hrs"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:inputType="time"
+        android:layout_below="@+id/Time"
+        android:layout_alignLeft="@+id/hours"
+        android:layout_alignStart="@+id/hours"
+        android:layout_alignRight="@+id/hours"
+        android:layout_alignEnd="@+id/hours" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/hours4"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="24:00 hrs"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:inputType="time"
+        android:layout_below="@+id/editText9"
+        android:layout_alignLeft="@+id/editText9"
+        android:layout_alignStart="@+id/editText9"
+        android:layout_alignRight="@+id/editText9"
+        android:layout_alignEnd="@+id/editText9" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/hours5"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="0:00 hrs"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:inputType="time"
+        android:layout_below="@+id/hours3"
+        android:layout_alignLeft="@+id/hours3"
+        android:layout_alignStart="@+id/hours3"
+        android:layout_alignRight="@+id/hours3"
+        android:layout_alignEnd="@+id/hours3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/hours6"
+        android:background="@android:drawable/editbox_background_normal"
+        android:hint="24:00 hrs"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:inputType="time"
+        android:layout_below="@+id/hours4"
+        android:layout_alignLeft="@+id/hours4"
+        android:layout_alignStart="@+id/hours4"
+        android:layout_alignRight="@+id/hours4"
+        android:layout_alignEnd="@+id/hours4" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="-"
+    android:textSize="40dp"
+    android:id="@+id/to2"
+        android:layout_marginTop="14dp"
+        android:layout_alignTop="@+id/editText9"
+        android:layout_alignLeft="@+id/to1"
+        android:layout_alignStart="@+id/to1" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="-"
+    android:textSize="40dp"
+    android:id="@+id/to3"
+        android:layout_below="@+id/to1"
+        android:layout_alignLeft="@+id/to2"
+        android:layout_alignStart="@+id/to2" />
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/AddMore"
+        android:background="@android:drawable/ic_input_add"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@+id/hours6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Add More"
+        android:textSize="10dp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_below="@+id/to3"
+        android:layout_toLeftOf="@+id/AddMore"
+        android:layout_toStartOf="@+id/AddMore" />
+
+    <RadioButton
+        android:text="Meditation"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Meditation"
+        android:button="@android:drawable/radiobutton_off_background"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_alignBaseline="@+id/plainYoga"
+        android:layout_alignBottom="@+id/plainYoga"
+        android:layout_toRightOf="@+id/perHour"
+        android:layout_toEndOf="@+id/perHour" />
+
+    <Button
+        android:text="Next"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button"
+        android:background="@drawable/next"
+        android:layout_below="@+id/AddMore"
+        android:layout_alignLeft="@+id/radioButton4"
+        android:layout_alignStart="@+id/radioButton4" />
+
+
+
+
+
+
+
+
+
+
+
+
+
